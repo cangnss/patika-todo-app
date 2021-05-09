@@ -51,8 +51,7 @@ function addLocalStorage(newTodo){
     localStorage.setItem('todos',JSON.stringify(todos))
 }
 
-var ulList = document.querySelector('ul')
-ulList.addEventListener('click',function(event){
+list.addEventListener('click',function(event){
     if(event.target.tagName === "LI"){
         event.target.classList.toggle('checked');
     }
