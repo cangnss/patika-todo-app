@@ -3,14 +3,6 @@ var list = document.querySelector('#list')
 
 var closeButton = document.getElementsByClassName("close");
 
-function changeText(){
-    list.addEventListener('click',function(event){
-        if(event.target.tagName === "li"){
-            event.target.classList.add('checked');
-        }
-    })
-}
-
 function newElement(){
     const newTodo = task.value
     if(newTodo === ""){
